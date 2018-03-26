@@ -1,0 +1,105 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "C_Cpp.intelliSenseEngine": "Default",
+    // Font Settings
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+
+    "editor.colorDecorators": false,
+    "color-highlight.markRuler": false,
+    "color-highlight.matchWords": true,
+    "editor.codeLens": false,
+    // Minimap settings
+    "editor.minimap.enabled": true,
+    "editor.minimap.maxColumn": 80,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "always",
+
+    "editor.renderIndentGuides": true,
+    "editor.renderLineHighlight": "all",
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [80, 120],
+    "editor.selectionHighlight": true,
+    // Tab space settings
+    "editor.tabSize": 4,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "editor.smoothScrolling": true,
+
+    "explorer.sortOrder": "type",
+    "explorer.autoReveal": true,
+    "explorer.openEditors.visible": 0,
+    "material-icon-theme.files.associations": {
+        "*.out": "Exe",
+        "*.o": "Assembly",
+    },
+    "material-icon-theme.hidesExplorerArrows": true,
+    "files.exclude": {
+        "**/.svn": false,
+        "**/.hg": false,
+        "**/.DS_Store": false,
+        "**/.git": false,
+   },
+    "files.trimTrailingWhitespace": true,
+
+    "projectManager.sortList": "Name",
+    "projectManager.showProjectNameInStatusBar": true,
+
+    "terminal.integrated.fontFamily": "Hack",
+    "terminal.integrated.fontSize": 14,
+
+    // Special Keyword Highlighting
+    "todohighlight.keywords": [
+        {
+            "text": "FIXME:",
+            "color": "#282C34",
+            "backgroundColor": "#E06C75"
+            // One Dark Pro Vivid
+            // "backgroundColor": "#D25252"
+        },
+        {
+            "text": "TODO:",
+            "color": "#282C34",
+            "backgroundColor": "#E5C07B"
+            // One Dark Pro Vivid
+            // "backgroundColor": "#FFC600"
+        }
+    ],
+    "telemetry.enableTelemetry": false,
+    "trailing-spaces.trimOnSave": false,
+
+    "window.menuBarVisibility": "hidden",
+
+    "workbench.activityBar.visible": true,
+    "workbench.colorCustomizations": {
+        "editorWhitespace.foreground": "#595D68"
+    },
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.feedback.visible": false,
+    "window.zoomLevel": 0,
+    "vsicons.projectDetection.disableDetect": true,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressUpdateNotice": true,
+        "suppressWelcomeNotice": true
+    },
+    "workbench.colorTheme": "One Dark Pro",
+    "explorer.confirmDragAndDrop": true,
+    "[javascript]": {
+        "editor.tabSize": 2,
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "gitlens.keymap": "alternate"
+}
