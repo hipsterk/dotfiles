@@ -1,0 +1,95 @@
+{
+    "bracketPairColorizer.consecutivePairColors": [
+        "()",
+        "[]",
+        "{}",
+        [
+            "#e5c07b",
+            "#c678dd",
+            "#61afef"
+        ],
+        "#e06c75"
+    ],
+    "bracketPairColorizer.highlightActiveScope": true,
+    "bracketPairColorizer.activeScopeCSS": [
+        "borderStyle : solid",
+        "borderWidth : 1px",
+        "borderColor : {color}; opacity: 0.5",
+        "backgroundColor : {color}",
+        "fontWeight : bold"
+    ],
+    // Font Settings
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.colorDecorators": false,
+    "editor.matchBrackets": false,
+    "color-highlight.markRuler": false,
+    "color-highlight.matchWords": true,
+    "editor.codeLens": false,
+    // Minimap settings
+    "editor.minimap.enabled": false,
+    "editor.minimap.maxColumn": 80,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "always",
+
+    "editor.renderIndentGuides": false,
+    "editor.renderLineHighlight": "none",
+    "editor.renderWhitespace": "all",
+    "editor.selectionHighlight": true,
+    // Tab space settings
+    "editor.tabSize": 2,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "editor.smoothScrolling": true,
+
+    "explorer.sortOrder": "type",
+    "explorer.autoReveal": true,
+    "explorer.openEditors.visible": 0,
+    "material-icon-theme.files.associations": {
+        "*.out": "Exe",
+        "*.o": "Assembly",
+        "*.db": "Database",
+        "package.json": "npm",
+        "package-lock.json": "npm"
+    },
+    "material-icon-theme.hidesExplorerArrows": true,
+    "files.exclude": {
+        "**/.svn": false,
+        "**/.hg": false,
+        "**/.DS_Store": true,
+        "**/.git": false,
+   },
+    "files.trimTrailingWhitespace": true,
+
+    "terminal.integrated.fontFamily": "Hack",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.shell.osx": "zsh",
+    "terminal.integrated.cursorBlinking": false,
+
+    "telemetry.enableTelemetry": false,
+
+    "workbench.activityBar.visible": false,
+    "workbench.colorCustomizations": {
+        "editorWhitespace.foreground": "#7F848E",
+    },
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    "workbench.sideBar.location": "right",
+    "workbench.statusBar.feedback.visible": false,
+    "window.zoomLevel": 0,
+
+    "explorer.confirmDragAndDrop": true,
+    "[javascript]": {
+        "editor.tabSize": 2,
+    },
+
+    "material-icon-theme.folders.theme": "specific",
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.fontAliasing": "antialiased",
+    "workbench.statusBar.visible": false,
+    "disableLigatures.mode": "Cursor",
+}
