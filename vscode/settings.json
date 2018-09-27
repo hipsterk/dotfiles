@@ -1,52 +1,44 @@
-{
-    "bracketPairColorizer.consecutivePairColors": [
-        "()",
-        "[]",
-        "{}",
-        [
-            "#e5c07b",
-            "#c678dd",
-            "#61afef"
-        ],
-        "#e06c75"
-    ],
+[200~{
+    // Bracket Pair Colorizers Settings
     "bracketPairColorizer.highlightActiveScope": true,
     "bracketPairColorizer.activeScopeCSS": [
-        "borderStyle : solid",
-        "borderWidth : 1px",
-        "borderColor : {color}; opacity: 0.5",
-        "backgroundColor : {color}",
         "fontWeight : bold"
     ],
+    // Breadcrumb Settings
+    "breadcrumbs.enabled": true,
     // Font Settings
-    "editor.fontFamily": "'Fira Code'",
+    "editor.fontFamily": "'Dank Mono'",
     "editor.fontLigatures": true,
-    "editor.fontSize": 14,
+    "editor.fontSize": 16,
     "editor.colorDecorators": false,
     "editor.matchBrackets": false,
     "color-highlight.markRuler": false,
     "color-highlight.matchWords": true,
     "editor.codeLens": false,
-    // Minimap settings
+    // Minimap Settings
     "editor.minimap.enabled": false,
     "editor.minimap.maxColumn": 80,
     "editor.minimap.renderCharacters": false,
     "editor.minimap.showSlider": "always",
-
+    // Editor Settings
     "editor.renderIndentGuides": false,
     "editor.renderLineHighlight": "none",
     "editor.renderWhitespace": "all",
-    "editor.selectionHighlight": true,
+    "editor.selectionHighlight": false,
+    "editor.occurrencesHighlight": false,
     // Tab space settings
     "editor.tabSize": 2,
     "editor.hideCursorInOverviewRuler": true,
     "editor.insertSpaces": true,
     "editor.detectIndentation": true,
     "editor.smoothScrolling": true,
-
+    "editor.lineHeight": 16,
+    // Explorer Settings
     "explorer.sortOrder": "type",
     "explorer.autoReveal": true,
     "explorer.openEditors.visible": 0,
+    "explorer.confirmDragAndDrop": true,
+    // Material Icon Theme Settings
     "material-icon-theme.files.associations": {
         "*.out": "Exe",
         "*.o": "Assembly",
@@ -55,6 +47,8 @@
         "package-lock.json": "npm"
     },
     "material-icon-theme.hidesExplorerArrows": true,
+    "material-icon-theme.folders.theme": "specific",
+    // Files Settings
     "files.exclude": {
         "**/.svn": false,
         "**/.hg": false,
@@ -62,14 +56,14 @@
         "**/.git": false,
    },
     "files.trimTrailingWhitespace": true,
-
+    // Terminal Settings
     "terminal.integrated.fontFamily": "Hack",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.shell.osx": "zsh",
     "terminal.integrated.cursorBlinking": false,
 
     "telemetry.enableTelemetry": false,
-
+    // Workbench Settings
     "workbench.activityBar.visible": false,
     "workbench.colorCustomizations": {
         "editorWhitespace.foreground": "#7F848E",
@@ -80,16 +74,16 @@
     "workbench.startupEditor": "none",
     "workbench.sideBar.location": "right",
     "workbench.statusBar.feedback.visible": false,
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.fontAliasing": "antialiased",
+    "workbench.statusBar.visible": false,
+    "workbench.editor.showTabs": false,
+    // Window Settings
     "window.zoomLevel": 0,
-
-    "explorer.confirmDragAndDrop": true,
+    // Language Settings
     "[javascript]": {
         "editor.tabSize": 2,
     },
 
-    "material-icon-theme.folders.theme": "specific",
-    "workbench.colorTheme": "One Dark Pro",
-    "workbench.fontAliasing": "antialiased",
-    "workbench.statusBar.visible": false,
     "disableLigatures.mode": "Cursor",
 }
