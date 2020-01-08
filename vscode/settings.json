@@ -1,89 +1,110 @@
-[200~{
-    // Bracket Pair Colorizers Settings
-    "bracketPairColorizer.highlightActiveScope": true,
-    "bracketPairColorizer.activeScopeCSS": [
-        "fontWeight : bold"
-    ],
-    // Breadcrumb Settings
-    "breadcrumbs.enabled": true,
-    // Font Settings
-    "editor.fontFamily": "'Dank Mono'",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 16,
-    "editor.colorDecorators": false,
-    "editor.matchBrackets": false,
-    "color-highlight.markRuler": false,
-    "color-highlight.matchWords": true,
-    "editor.codeLens": false,
-    // Minimap Settings
-    "editor.minimap.enabled": false,
-    "editor.minimap.maxColumn": 80,
-    "editor.minimap.renderCharacters": false,
-    "editor.minimap.showSlider": "always",
-    // Editor Settings
-    "editor.renderIndentGuides": false,
-    "editor.renderLineHighlight": "none",
-    "editor.renderWhitespace": "all",
-    "editor.selectionHighlight": false,
-    "editor.occurrencesHighlight": false,
-    // Tab space settings
+{
+  // Breadcrumbs
+  "breadcrumbs.enabled": false,
+  // Editor
+  "editor.fontFamily": "Hack",
+  "editor.fontSize": 13,
+  "editor.fontLigatures": true,
+  "editor.colorDecorators": false,
+  "editor.codeLens": false,
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.showSlider": "mouseover",
+  "editor.renderLineHighlight": "none",
+  "editor.rulers": [],
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.overviewRulerBorder": false,
+  "editor.detectIndentation": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.smoothScrolling": true,
+  "editor.renderWhitespace": "all",
+  "editor.renderIndentGuides": false,
+  "editor.matchBrackets": "never",
+  "editor.selectionHighlight": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.enabled": false,
+  "editor.occurrencesHighlight": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.wordWrap": "on",
+  "editor.wordBasedSuggestions": false,
+  "editor.cursorSurroundingLines": 5,
+  // Explorer
+  "explorer.autoReveal": true,
+  "explorer.openEditors.visible": 0,
+  "explorer.confirmDragAndDrop": true,
+  "explorer.sortOrder": "type",
+  // Files
+  "files.exclude": {
+    "**/.svn": false,
+    "**/.hg": false,
+    "**/.DS_Store": false,
+    "**/.git": false,
+  },
+  "files.trimTrailingWhitespace": true,
+  // Git
+  "git.ignoreMissingGitWarning": true,
+  // Telemetry
+  "telemetry.enableTelemetry": false,
+  // Terminal
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  // Window
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "hidden",
+  "window.zoomLevel": 0,
+  // Workbench
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.visible": false,
+  "workbench.colorCustomizations": {
+    "editorWhitespace.foreground": "#7F848E",
+    "editorOverviewRuler.border": "#282c34",
+    "statusBar.noFolderBackground": "#282c34"
+  },
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.startupEditor": "none",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.sideBar.location": "right",
+  // Zen Mode
+  "zenMode.fullScreen": false,
+  "zenMode.centerLayout": false,
+
+  // Language Specific
+  "[javascript]": {
     "editor.tabSize": 2,
-    "editor.hideCursorInOverviewRuler": true,
-    "editor.insertSpaces": true,
-    "editor.detectIndentation": true,
-    "editor.smoothScrolling": true,
-    "editor.lineHeight": 16,
-    // Explorer Settings
-    "explorer.sortOrder": "type",
-    "explorer.autoReveal": true,
-    "explorer.openEditors.visible": 0,
-    "explorer.confirmDragAndDrop": true,
-    // Material Icon Theme Settings
-    "material-icon-theme.files.associations": {
-        "*.out": "Exe",
-        "*.o": "Assembly",
-        "*.db": "Database",
-        "package.json": "npm",
-        "package-lock.json": "npm"
-    },
-    "material-icon-theme.hidesExplorerArrows": true,
-    "material-icon-theme.folders.theme": "specific",
-    // Files Settings
-    "files.exclude": {
-        "**/.svn": false,
-        "**/.hg": false,
-        "**/.DS_Store": true,
-        "**/.git": false,
-   },
-    "files.trimTrailingWhitespace": true,
-    // Terminal Settings
-    "terminal.integrated.fontFamily": "Hack",
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.shell.osx": "zsh",
-    "terminal.integrated.cursorBlinking": false,
+  },
 
-    "telemetry.enableTelemetry": false,
-    // Workbench Settings
-    "workbench.activityBar.visible": false,
-    "workbench.colorCustomizations": {
-        "editorWhitespace.foreground": "#7F848E",
-    },
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "none",
-    "workbench.sideBar.location": "right",
-    "workbench.statusBar.feedback.visible": false,
-    "workbench.colorTheme": "One Dark Pro",
-    "workbench.fontAliasing": "antialiased",
-    "workbench.statusBar.visible": false,
-    "workbench.editor.showTabs": false,
-    // Window Settings
-    "window.zoomLevel": 0,
-    // Language Settings
-    "[javascript]": {
-        "editor.tabSize": 2,
-    },
-
-    "disableLigatures.mode": "Cursor",
+  // Extensions
+  "extensions.ignoreRecommendations": false,
+  // Bracket Pair Colorizer 2
+  "bracket-pair-colorizer-2.colors":[
+    "#e5c07b",
+    "#c678dd",
+    "#61afef"
+  ],
+  // Color Highlight
+  "color-highlight.markRuler": false,
+  "color-highlight.matchWords": false,
+  "color-highlight.markerType": "underline",
+  // Highlight Matching Tag Settings
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "name": {
+        "underline": "#e05252"
+      }
+    }
+  },
+  // Material Icon Theme
+  "material-icon-theme.files.associations": {
+    "*.out": "Exe",
+    "*.o": "Assembly",
+    "*.msg": "email",
+    "package.json": "nodejs_alt"
+  },
+  "material-icon-theme.hidesExplorerArrows": true,
+  "material-icon-theme.showUpdateMessage": true,
+  "material-icon-theme.showReloadMessage": false,
 }
