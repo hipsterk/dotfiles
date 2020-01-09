@@ -37,8 +37,7 @@
   "files.exclude": {
     "**/.svn": false,
     "**/.hg": false,
-    "**/.DS_Store": false,
-    "**/.git": false,
+    "**/.DS_Store": false
   },
   "files.trimTrailingWhitespace": true,
   // Git
@@ -58,7 +57,8 @@
   "workbench.colorCustomizations": {
     "editorWhitespace.foreground": "#7F848E",
     "editorOverviewRuler.border": "#282c34",
-    "statusBar.noFolderBackground": "#282c34"
+    "statusBar.noFolderBackground": "#282c34",
+    "statusBar.background": "#282c34"
   },
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.startupEditor": "none",
@@ -74,7 +74,7 @@
 
   // Language Specific
   "[javascript]": {
-    "editor.tabSize": 2,
+    "editor.tabSize": 2
   },
 
   // Extensions
@@ -85,6 +85,12 @@
     "#c678dd",
     "#61afef"
   ],
+  "bracket-pair-colorizer-2.activeScopeCSS": [
+    "fontWeight : bold"
+  ],
+  "bracket-pair-colorizer-2.highlightActiveScope": true,
+  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+  "bracket-pair-colorizer-2.showVerticalScopeLine": false,
   // Color Highlight
   "color-highlight.markRuler": false,
   "color-highlight.matchWords": false,
@@ -106,5 +112,5 @@
   },
   "material-icon-theme.hidesExplorerArrows": true,
   "material-icon-theme.showUpdateMessage": true,
-  "material-icon-theme.showReloadMessage": false,
+  "material-icon-theme.showReloadMessage": false
 }
