@@ -43,7 +43,7 @@ line-size = 3
 line-color = #f00
 
 border-size = 20
-border-bottom = 0
+border-bottomsize = 0
 border-color = #00000000
 
 padding-left = 0
@@ -101,7 +101,7 @@ line-size = 3
 line-color = #f00
 
 border-size = 15
-border-bottom = 0
+border-bottom-size = 0
 border-color = #00000000
 
 padding-left = 2
@@ -160,7 +160,7 @@ line-size = 3
 line-color = #f00
 
 border-size = 15
-border-bottom = 0
+border-bottom-size = 0
 border-color = #00000000
 
 padding-left = 0
@@ -219,7 +219,7 @@ line-size = 3
 line-color = #f00
 
 border-size = 15
-border-bottom = 0
+border-bottom-size = 0
 border-color = #00000000
 
 padding-left = 6
@@ -407,20 +407,25 @@ label-floating-font = 3
 ;   %name%
 
 ; focused = Selected tag on focused monitor
-label-focused = %name%
+;label-focused = %name%
+label-focused = 
 label-focused-background = ${colors.background}
-label-focused-foreground = ${colors.primary}
+;label-focused-foreground = ${colors.primary}
+label-focused-foreground = #FFFFFF
 ;label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 label-focused-font = 2
 
 ; unfocused = Unselected tag on unselected monitor
-label-unfocused = %name%
-label-unfocused-foreground = ${colors.primary}
+;label-unfocused = %name%
+label-unfocused = 
+;label-unfocused-foreground = ${colors.primary}
+label-unfocused-foreground = #FFFFFF
 label-unfocused-padding = 2
 
 ; visible = Unselected tag, but occupied tag on any monitor
-label-visible = %name%
+;label-visible = %name%
+label-visible = 
 label-visible-background = ${self.label-focused-background}
 label-visible-foreground = #FFFFFF
 ;label-visible-underline = ${colors.primary}
@@ -428,14 +433,17 @@ label-visible-padding = ${self.label-focused-padding}
 label-visible-font = 2
 
 ; urgent = Unselected tag with window that has urgency hint set
-label-urgent = %name%
+;label-urgent = %name%
+label-urgent = 
 label-urgent-foreground = ${colors.alert}
 label-urgent-padding = 2
 
 ; empty = Unselected and unoccupied tag
 ; This can be set to an empty string to hide empty tags
-label-empty = %name%
-label-empty-foreground = #777777
+;label-empty = %name%
+label-empty = 
+;label-empty-foreground = #777777
+label-empty-foreground = #FFFFFF
 label-empty-background = ${colors.background}
 label-empty-padding = 2
 
@@ -478,7 +486,7 @@ card = intel_backlight
 type = internal/cpu
 interval = 2
 format-prefix = " "
-format-prefix-foreground = #f90000
+format-prefix-foreground = #ffffff
 ;format-underline = #f90000
 label = CPU %percentage:2%%
 
@@ -486,7 +494,7 @@ label = CPU %percentage:2%%
 type = internal/memory
 interval = 2
 format-prefix = " "
-format-prefix-foreground = #4bffdc
+format-prefix-foreground = #ffffff
 ;format-underline = #4bffdc
 label = MEM %percentage_used%%
 
@@ -533,10 +541,10 @@ type = internal/date
 interval = 5
 
 date = "%a %b %d"
-date-alt = " %Y-%m-%d"
+;date-alt = " %Y-%m-%d"
 
 time = " %I:%M %p"
-time-alt = %H:%M:%S
+;time-alt = %H:%M:%S
 
 ;format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
@@ -643,7 +651,7 @@ warn-temperature = 60
 format = <ramp> <label>
 ;format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
+;format-warn-underline = ${self.format-underline}
 
 label = %temperature-c%
 label-warn = %temperature-c%
@@ -652,7 +660,8 @@ label-warn-foreground = ${colors.secondary}
 ramp-0 = 
 ramp-1 = 
 ramp-2 = 
-ramp-foreground = #f50a4d
+;ramp-foreground = #f50a4d
+ramp-foreground = #ffffff
 
 [module/powermenu]
 type = custom/menu
