@@ -33,8 +33,6 @@ vim.opt.wrap = false                            -- display lines as one long lin
 vim.opt.scrolloff = 8                           -- is one of my fav
 vim.opt.sidescrolloff = 8
 vim.opt.guifont = "monospace:h17"               -- the font used in graphical neovim applications
--- vim.opt.listchars = { space = '·', tab = '»' }  -- characters shown with `set list`
-
 
 vim.opt.shortmess:append "c"
 
@@ -42,3 +40,4 @@ vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 vim.cmd [[set listchars+=space:·]]
+vim.cmd [[let loaded_matchparen = 1]]

@@ -85,12 +85,22 @@ return packer.startup(function(use)
   use "JoosepAlviste/nvim-ts-context-commentstring"
   use "p00f/nvim-ts-rainbow"
   use "nvim-treesitter/playground"
+  use "windwp/nvim-ts-autotag"
 
   -- Git
   use "lewis6991/gitsigns.nvim"
 
   -- Toggleterm
   use "akinsho/toggleterm.nvim"
+
+  -- Codi
+  use "metakirby5/codi.vim"
+
+  -- LuaLine
+  use "nvim-lualine/lualine.nvim"
+
+  -- Hop
+  use "phaazon/hop.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

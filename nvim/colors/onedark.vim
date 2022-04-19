@@ -228,3 +228,4 @@ hi DiagnosticError guifg=#e06c75 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE ct
 hi DiagnosticWarn guifg=#d19a66 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi DiagnosticHint guifg=#abb2bf ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi DiagnosticInfo guifg=#61afef ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi CodiVirtualText guifg=#98c379 ctermfg=106 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE

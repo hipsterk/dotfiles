@@ -5,7 +5,7 @@
 
 local configs = require("nvim-treesitter.configs")
 configs.setup {
-  ensure_installed = "maintained",
+  ensure_installed = "all",
   sync_install = false,
   ignore_install = { "" }, -- List of parsers to ignore installing
   highlight = {
@@ -19,9 +19,11 @@ configs.setup {
     -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
     extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
     max_file_lines = nil, -- Do not enable for files with more than n lines, int
-    -- colors = { "#E5C07B", "#C678DD", "#61AFEF" }, -- table of hex strings
     colors = { "#FAE3B0", "#DDB6F2", "#96CDFB" }, -- table of hex strings
     -- termcolors = {} -- table of colour name strings
+  },
+  autotag = {
+    enable = true;
   },
   playground = {
     enable = true,

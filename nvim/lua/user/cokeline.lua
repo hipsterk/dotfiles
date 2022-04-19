@@ -3,47 +3,40 @@ if not status_ok then
   return
 end
 
+local get_hex = require('cokeline/utils').get_hex
+
 cokeline.setup {
   show_if_buffers_are_at_least = 1,
   default_hl = {
-    focused = {
-      fg = '#d9e0ee',
-      bg = 'NONE',
-    },
-    unfocused = {
-      fg = '#988ba2',
-      bg = 'NONE',
-    }
+    fg = function(buffer)
+      return
+        buffer.is_focused
+        and get_hex('Normal', 'fg')
+        or get_hex('Comment', 'fg')
+    end,
+    bg = 'NONE',
   },
-  rendering = {
-    left_sidebar = {
-      filetype = 'NvimTree',
-      components = {
-        {
-          text = '  NvimTree',
-          hl = {
-            fg = '#fae3b0',
-            style = 'bold'
-          }
-        },
-      }
-    },
+  sidebar = {
+    filetype = 'NvimTree',
+    components = {
+      {
+        text = '  NvimTree',
+        fg = get_hex('Constant', 'fg'),
+        style = 'bold'
+      },
+    }
   },
   components = {
     {
       text = function(buffer) return ' ' .. buffer.devicon.icon end,
-      hl = {
-        fg = function(buffer) return buffer.devicon.color end,
-      },
+      fg = function(buffer) return buffer.devicon.color end,
     },
     {
       text = function(buffer) return buffer.filename .. ' ' end,
     },
     {
       text = function(buffer) return buffer.is_modified and '●' or ' ' end,
-      hl = {
-        fg = function(buffer) return buffer.is_modified and '#abe9b3' or nil end,
-      },
+      fg = function(buffer) return buffer.is_modified and get_hex('String', 'fg') or nil end,
     },
   }
 }
