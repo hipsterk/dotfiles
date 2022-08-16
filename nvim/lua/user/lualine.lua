@@ -13,6 +13,7 @@ local colors = {
   grey   = '#988ba2',
   green  = '#abe9b3',
   pink   = '#f5c2e7',
+  yellow = '#fae3b0',
 }
 
 local mode = {
@@ -46,23 +47,28 @@ local mode = {
 local catppuccin_theme = {
   normal = {
     a = { fg = colors.black, bg = colors.blue, gui = 'bold' },
-    b = { fg = colors.blue,  bg = colors.black },
+    b = { fg = colors.blue },
   },
   insert = {
     a = { fg = colors.black, bg = colors.green, gui = 'bold' },
-    b = { fg = colors.green, bg = colors.black },
+    b = { fg = colors.green },
   },
   visual = {
     a = { fg = colors.black,  bg = colors.violet, gui = 'bold' },
-    b = { fg = colors.violet, bg = colors.black},
+    b = { fg = colors.violet },
   },
   replace = {
-    a = { fg = colors.black, bg = colors.cyan, gui = 'bold'},
-    b = { fg = colors.cyan,  bg = colors.black},
+    a = { fg = colors.black, bg = colors.yellow, gui = 'bold'},
+    b = { fg = colors.yellow },
   },
   command = {
     a = { fg = colors.black, bg = colors.red, gui = 'bold'},
-    b = { fg = colors.red,   bg = colors.black},
+    b = { fg = colors.red },
+  },
+  terminal = {
+    a = { fg = colors.green, gui = 'bold' },
+    b = { fg = colors.green },
+    x = { fg = colors.green },
   }
 }
 
@@ -71,9 +77,11 @@ lualine.setup ({
     theme = catppuccin_theme;
     icons_enabled = true;
     component_separators = { left = '', right = ''},
-    section_separators = { left = '', right = ''},
+    -- section_separators = { left = '', right = ''},
+    section_separators = { left = '', right = '' },
     disabled_filetypes = {},
     always_divide_middle = true,
+    globalstatus = true,
   },
   sections = {
     lualine_a = { mode },

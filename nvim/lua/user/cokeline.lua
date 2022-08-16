@@ -7,6 +7,9 @@ local get_hex = require('cokeline/utils').get_hex
 
 cokeline.setup {
   show_if_buffers_are_at_least = 1,
+  buffers = {
+    new_buffers_position = 'next',
+  },
   default_hl = {
     fg = function(buffer)
       return
@@ -20,8 +23,8 @@ cokeline.setup {
     filetype = 'NvimTree',
     components = {
       {
-        text = '  NvimTree',
-        fg = get_hex('Constant', 'fg'),
+        text = '  File Explorer',
+        fg = get_hex('String', 'fg'),
         style = 'bold'
       },
     }
