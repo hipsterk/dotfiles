@@ -1,9 +1,9 @@
 configuration {
 modi: "window,run,ssh,drun";
-width: 25;
+width: 50;
 lines: 9;
 /*	columns: 1;*/
-font: "Roboto 26";
+font: "Roboto 52";
 /*	bw: 1;*/
 /*	location: 0;*/
 /*	padding: 5;*/
@@ -150,4 +150,5 @@ scrollbar-width: 0;
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 }
-@import "/home/hipsterk/.config/rofi/alfred.rasi"
+@import "/home/hipsterk/.config/rofi/catppuccin.rasi"
+

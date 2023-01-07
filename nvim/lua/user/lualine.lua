@@ -84,7 +84,7 @@ lualine.setup ({
     globalstatus = true,
   },
   sections = {
-    lualine_a = { mode },
+    lualine_a = { 'mode' },
     lualine_b = {'branch', 'diff'},
     lualine_c = {'diagnostics'},
     lualine_x = {'filetype'},

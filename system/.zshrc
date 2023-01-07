@@ -8,16 +8,11 @@ SPACESHIP_EXEC_TIME_ELAPSED=9
 SPACESHIP_USER_SHOW=needed
 SPACESHIP_HOST_SHOW=false
 SPACESHIP_BATTERY_SHOW=false
-
-# fast-syntax-highlighting
-source ~/git-repos/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-
-# Fix dolphin colors
-source ~/.profile
+SPACESHIP_ASYNC_SYMBOL=" "
 
 # case insensitive completion
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' \
-  '+l:|?=** r:|?=**'
+   '+l:|?=** r:|?=**'
 
 # aliases
 alias ls='ls --group-directories-first --color=auto'
@@ -25,16 +20,42 @@ alias la='ls -a'
 alias l='ls -lah'
 alias ll='ls -lh'
 alias g='git'
-alias less='less -R'
 alias vi='nvim'
+alias less='less -R'
 alias grep='grep --color=always'
-alias deemix='python3 -m deemix -b flac'
 alias diff='diff --color'
+alias sudo='sudo -p "Password: "'
+alias ta='tmux attach -t'
 
-PATH="/home/hipsterk/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/hipsterk/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/hipsterk/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/hipsterk/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/hipsterk/perl5"; export PERL_MM_OPT;
+export LC_ALL="C"
 
+QT_QPA_PLATFORMTHEME=gtk2
 GTK_THEME=Arc:dark
+
+# functions
+function nd {
+  node -i -e "$(< ${1})"
+}
+
+# Locale
+LC_CTYPE=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+
+# History in cache directory
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.cache/zsh/history
+HISTORY_IGNORE="(cd|cd *|ls *|pwd|exit|vi|vi *)"
+setopt histignorespace
+
+# Basic auto/tab complete
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)          # Include hidden files
+
+# zsh-autosuggestions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# fast-syntax-highlighting
+source ~/git/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh

@@ -6,25 +6,24 @@
 
 * {
     selected-normal-foreground:  rgba ( 232, 234, 246, 100 % );
-    foreground:                  rgba ( 232, 234, 246, 100 % );
+    foreground:                  rgba ( 195, 186, 198, 100 % );
     normal-foreground:           @foreground;
-    alternate-normal-background: rgba ( 0, 0, 0, 0 % );
     red:                         rgba ( 220, 50, 47, 100 % );
     selected-urgent-foreground:  rgba ( 183, 28, 28, 100 % );
-    blue:                        rgba ( 38, 139, 210, 100 % );
+    blue:                        rgba ( 150, 205, 251, 100 % );
     urgent-foreground:           rgba ( 255, 205, 210, 100 % );
     alternate-urgent-background: rgba ( 183, 28, 28, 80 % );
     active-foreground:           rgba ( 178, 235, 242, 100 % );
     lightbg:                     rgba ( 238, 232, 213, 100 % );
-    selected-active-foreground:  rgba ( 0, 96, 100, 100 % );
+    selected-active-foreground:  rgba ( 137, 220, 235, 100 % );
     alternate-active-background: rgba ( 0, 96, 100, 80 % );
-    background:                  rgba ( 0, 0, 0, 80 % );
-    bordercolor:                 rgba ( 0, 0, 0, 80 % );
+    background:                  rgba ( 30, 30, 46, 90%);
     alternate-normal-foreground: @foreground;
     normal-background:           rgba ( 0, 0, 0, 0 % );
+    alternate-normal-background: @normal-background;
     lightfg:                     rgba ( 88, 104, 117, 100 % );
-    selected-normal-background:  rgba ( 2, 37, 199, 80 % );
-    border-color:                rgba ( 0, 0, 0, 80 % );
+    selected-normal-background:  rgba ( 150, 205, 251, 40 % );
+    border-color:                @background;
     spacing:                     2;
     separatorcolor:              rgba ( 0, 0, 0, 80 % );
     urgent-background:           rgba ( 223, 110, 0, 6 % );
@@ -33,12 +32,12 @@
     background-color:            rgba ( 0, 0, 0, 0 % );
     alternate-active-foreground: @active-foreground;
     active-background:           rgba ( 223, 110, 0, 6 % );
-    selected-active-background:  rgba ( 178, 235, 242, 80 % );
+    selected-active-background:  rgba ( 171, 233, 179, 40 % );
 }
 window {
     background-color: @background;
-    border:           1;
-    padding:          5;
+    border:           2;
+    padding:          10;
 }
 mainbox {
     border:  0;
@@ -62,7 +61,7 @@ listview {
 }
 element {
     border:  0;
-    padding: 1px ;
+    padding: 1;
 }
 element.normal.normal {
     background-color: @normal-background;

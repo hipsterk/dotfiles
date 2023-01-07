@@ -51,8 +51,8 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-tree.lua'
   use "moll/vim-bbye"
   use "noib3/nvim-cokeline"
-  use "folke/which-key.nvim"
-  use "mrjones2014/legendary.nvim"
+--  use "folke/which-key.nvim"
+--  use "mrjones2014/legendary.nvim"
 
   -- Colorschemes
 
@@ -102,6 +102,9 @@ return packer.startup(function(use)
 
   -- Hop
   use "phaazon/hop.nvim"
+
+  -- Suda
+  use "lambdalisue/suda.vim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
